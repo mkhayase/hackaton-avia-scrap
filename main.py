@@ -1,8 +1,10 @@
+import uvicorn
 from fastapi import FastAPI
 
+app = FastAPI()
 
 def main():
-    uvicorn.run('127.0.0.1')
+    uvicorn.run(app)
 
 
 main()
